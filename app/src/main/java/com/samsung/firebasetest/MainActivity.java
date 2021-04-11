@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.samsung.firebasetest.adapters.ChatAdapter;
 import com.samsung.firebasetest.models.User;
+import com.samsung.firebasetest.services.ChatService;
 
 public class MainActivity extends AppCompatActivity {
 //-MY-ZzskDzSl8u9TAp1o
@@ -28,11 +29,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        adapter = new ChatAdapter(ChatService.initOptionsForAdapter());
+
         RecyclerView recyclerViewChat = findViewById(R.id.chatList);
         recyclerViewChat.setAdapter(adapter);
         LinearLayoutManager manager = new LinearLayoutManager(this);
         manager.setReverseLayout(true);
         recyclerViewChat.setLayoutManager(manager);
+
     }
 
     @Override
