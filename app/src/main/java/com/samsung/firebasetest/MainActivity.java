@@ -1,17 +1,23 @@
 package com.samsung.firebasetest;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.samsung.firebasetest.adapters.ChatAdapter;
+import com.samsung.firebasetest.models.Message;
 import com.samsung.firebasetest.models.User;
 import com.samsung.firebasetest.services.ChatService;
 
 public class MainActivity extends AppCompatActivity {
-//-MY-ZzskDzSl8u9TAp1o
+    //-MY-ZzskDzSl8u9TAp1o
 //-MY-b2WMlniJ33tC6JTo
 //-MY-b6bPMx-LYr9Z9obZ
 //-MY-buX-LxQy2jftfwLz
@@ -37,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
         manager.setReverseLayout(true);
         recyclerViewChat.setLayoutManager(manager);
 
+        EditText editText = findViewById(R.id.sendTextView);
+        ImageButton sendButton = findViewById(R.id.sendTextButton);
+
+        sendButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Message message = new Message(currentUser, editText.getText().toString());
+                ChatService.sendMessage(message);
+            }
+        });
     }
 
     @Override
