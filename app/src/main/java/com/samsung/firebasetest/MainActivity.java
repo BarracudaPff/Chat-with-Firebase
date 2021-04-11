@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerViewChat = findViewById(R.id.chatList);
         recyclerViewChat.setAdapter(adapter);
         LinearLayoutManager manager = new LinearLayoutManager(this);
-        manager.setReverseLayout(true);
+        manager.setReverseLayout(false);
         recyclerViewChat.setLayoutManager(manager);
 
         EditText editText = findViewById(R.id.sendTextView);
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         sendButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                System.out.println("fsd");
                 Message message = new Message(currentUser, editText.getText().toString());
                 ChatService.sendMessage(message);
             }
