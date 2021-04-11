@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "701391369600",
+    "firebase_url": "https://light-chat-example-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "light-chat-example",
+    "storage_bucket": "light-chat-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701391369600:android:e1510b6098fba63dbdbd65",
+        "android_client_info": {
+          "package_name": "com.samsung.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701391369600-b0m5ehpscvite85nfctepabebik28lqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJWPyHhh5TRPh9Jx8O_RRdWfSbzd8ZGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701391369600-b0m5ehpscvite85nfctepabebik28lqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:701391369600:android:9cfba7a14d8d69b7bdbd65",
+        "android_client_info": {
+          "package_name": "com.samsung.lightchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "701391369600-b0m5ehpscvite85nfctepabebik28lqu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnJWPyHhh5TRPh9Jx8O_RRdWfSbzd8ZGw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "701391369600-b0m5ehpscvite85nfctepabebik28lqu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
